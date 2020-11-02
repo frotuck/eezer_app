@@ -23,7 +23,7 @@
         welcome
       </h1>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
     </v-app-bar>
     <v-container class="d-none d-sm-flex width-display">
       <v-img
