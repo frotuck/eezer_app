@@ -1,5 +1,5 @@
 <template >
-<v-dialog width="500px" v-model="editDialog">
+<v-dialog width="500px" v-model="editDialog" class="d-none d-sm-flex">
   <template v-slot:activator="{ on, attrs }">
   <v-btn class="secondary mt-5" accent v-bind="attrs" v-on="on">
       I'M A USER
@@ -28,16 +28,27 @@
           ></v-text-field>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row class="d-flex flex-column">
       <v-col>
         <v-card-actions class="d-flex flex-column">
           <v-btn 
           depressed 
-          class="secondary" 
+          class="secondary" router-link to="/user"
           @click="editDialog =false">Login as User</v-btn>
+					
+        </v-card-actions>
+      </v-col>
+			<v-col>
+        <v-card-actions class="d-flex flex-column">
+          <v-btn 
+          depressed 
+          class="secondary" router-link to="/usersignup"
+          @click="editDialog =false">Create account</v-btn>
+					
         </v-card-actions>
       </v-col>
     </v-row>
+		
     </v-container>
   </v-card>
 </v-dialog>

@@ -17,7 +17,7 @@
         />
       </div>
     </v-app-bar>
-    <v-main>
+    <v-main >
       <router-view></router-view>
     </v-main>
   </v-app>
@@ -32,3 +32,8 @@ export default {
   }),
 };
 </script>
+<style lang="scss" >
+body {
+	width: 100%;
+}
+</style>

@@ -1,5 +1,5 @@
 <template >
-<v-dialog width="500px" v-model="editDialog">
+<v-dialog width="500px" v-model="editDialog" class="d-none d-sm-flex">
   <template v-slot:activator="{ on, attrs }">
   <v-btn class="secondary mb-6 mt-10" accent v-bind="attrs" v-on="on">
       PERSONNEL
@@ -31,17 +31,18 @@
     <v-row>
       <v-col>
         <v-card-actions class="d-flex flex-column">
+					
           <v-btn 
           depressed 
-          class="secondary mb-3" 
+          class="secondary mb-3" router-link to="/admin-hub"
           @click="editDialog =false">Login as Admin</v-btn>
                     <v-btn 
           depressed 
-          class="secondary mb-3" 
+          class="secondary mb-3"  router-link to="/profile"
           @click="editDialog =false">Login as Driver</v-btn>
                     <v-btn 
           depressed 
-          class="secondary mb-3" 
+          class="secondary mb-3" router-link to="/feed"
           @click="editDialog =false">Login as Customer Service</v-btn>
         </v-card-actions>
       </v-col>

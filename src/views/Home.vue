@@ -1,5 +1,5 @@
 <template>
-<v-container  class="d-none d-sm-flex">
+<v-container class="d-none d-sm-flex">
   <v-img src="../assets/desktop-background-1.png"
   width="100%"
   height="200%">
