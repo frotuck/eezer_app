@@ -11,7 +11,7 @@
       <v-spacer></v-spacer>
 
       <h2 justify="center" style="color" class="header-page-name">
-        Driver ETA
+        Emergency
       </h2>
       <v-spacer></v-spacer>
       <v-img

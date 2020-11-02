@@ -1,15 +1,20 @@
 <template>
-<div></div>
+  <div>
+    <v-app-bar app class="d-sm-none" color="primaryblack">
+      <v-spacer></v-spacer>
+
+      <h2 justify="center" class="header-page-name">
+        Profile
+      </h2>
+      <v-spacer></v-spacer>
+
+      <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
+    </v-app-bar>
+  </div>
 </template>
 
 <script>
-
-export default {
-
-}
-
+export default {};
 </script>
 
-<style lang='scss'>
-
-</style>
+<style lang="scss"></style>
