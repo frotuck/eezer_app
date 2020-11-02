@@ -1,8 +1,9 @@
 <template>
   <v-app>
     <v-app-bar
+		class="d-none d-sm-flex"
       app
-      color="primary"
+      color="#ffff"
       dark
     >
       <div class="d-flex align-center">
@@ -12,12 +13,10 @@
           contain
           src="../src/assets/eezerlogo.svg"
           transition="scale-transition"
-          width="63"
+          width="58"
         />
-
       </div>
     </v-app-bar>
-
     <v-main>
       <router-view></router-view>
     </v-main>
