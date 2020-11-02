@@ -37,16 +37,27 @@
           @click="editDialog =false">Login as User</v-btn>
 					
         </v-card-actions>
+
       </v-col>
-			<v-col>
+							<v-card
+    class="mx-auto presentation-box"
+    width="200"
+    height="80"
+    outlined
+    color="primary"
+  
+	>
+		<v-col>
         <v-card-actions class="d-flex flex-column">
+					<p >haha</p>
           <v-btn 
           depressed 
           class="secondary" router-link to="/usersignup"
           @click="editDialog =false">Create account</v-btn>
 					
         </v-card-actions>
-      </v-col>
+      </v-col></v-card>
+		
     </v-row>
 		
     </v-container>
@@ -62,5 +73,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss' scoped>
+
 </style>

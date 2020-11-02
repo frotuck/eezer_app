@@ -1,5 +1,11 @@
 <template>
-<v-container class="d-none d-sm-flex">
+<div>
+
+		<!-- ###################### -->
+		<!-- #### DESKTOP VIEW #### -->
+		<!-- ###################### -->
+
+<v-container class="d-none d-sm-flex width-display">
   <v-img src="../assets/desktop-background-1.png"
   width="100%"
   height="200%">
@@ -73,6 +79,59 @@
   </v-row>
   </v-img>
     </v-container>
+
+		<!-- ##################### -->
+		<!-- #### MOBILE VIEW #### -->
+		<!-- ##################### -->
+
+<v-container class=" d-flex d-sm-none background-mobile width-display">
+ <v-img  >
+  <v-row>
+    <v-col         md="4"
+        offset-md="1">
+        <v-card
+    class="mx-auto presentation-box"
+    max-width="300"
+    height="300"
+    outlined
+    color="primary"
+  >
+
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="d-flex flex-column align-center">
+        <v-list-item-title class="headline mb-1">
+          Eezer Ambulance Service
+        </v-list-item-title>
+        <v-list-item-subtitle>Greyhound divisely hello coldly fonwderfully </v-list-item-subtitle>
+				
+        </div>
+      </v-list-item-content>
+      
+    </v-list-item>
+  </v-card>
+    </v-col>
+  </v-row>
+    <v-row >
+    <v-col  md="6"
+        offset-md="6">
+ 
+  <v-row justify="center">
+
+      <v-row justify="center">
+      <div class="d-flex flex-column mb-6">
+      <app-dialog-personnel ></app-dialog-personnel>
+      <app-dialog-user></app-dialog-user>
+      </div>
+    </v-row>
+
+</v-row>
+    </v-col>
+  </v-row>
+  </v-img>
+	
+    </v-container>
+		</div>
 </template>
 
 <script>
@@ -84,4 +143,17 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.width-display {
+	min-width: 100%;
+	padding: 0px;
+}
+.background-mobile {
+
+	background-image: url(../assets/mobile-background-1.png) ;
+	background-size: auto 100%;
+	height: 95vh;
+	background-position: center;
+
+}
+
 </style>

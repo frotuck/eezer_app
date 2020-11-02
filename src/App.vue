@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-app-bar
-		class="d-none d-sm-flex"
       app
       color="#ffff"
       dark
     >
       <div class="d-flex align-center">
+			
         <v-img
           alt="Eezerlogo"
           class=""
@@ -15,7 +15,10 @@
           transition="scale-transition"
           width="58"
         />
+				<div>	<h1 justify="center" class="welcome-style" style=" color border-bottom:3px solid #F87502">welcome</h1></div>
+				
       </div>
+			
     </v-app-bar>
     <v-main >
       <router-view></router-view>
@@ -33,7 +36,9 @@ export default {
 };
 </script>
 <style lang="scss" >
-body {
-	width: 100%;
+.welcome-style {
+	color: black;
+		border-bottom:3px solid #F87502;
+
 }
 </style>
