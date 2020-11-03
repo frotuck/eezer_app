@@ -112,6 +112,16 @@ const routes = [
     name: 'UserSignUp',
     component: () => import('../views/User/UserSignUp.vue'),
   },
+  {
+    path: '/useremergency',
+    name: 'Emergency',
+    component: () => import('../views/User/UserEmergency.vue'),
+  },
+  {
+    path: '/userprofile',
+    name: 'Emergency',
+    component: () => import('../views/User/UserProfile.vue'),
+  },
 ];
 
 const router = new VueRouter({

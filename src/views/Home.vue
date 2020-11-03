@@ -3,7 +3,7 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
-
+    <img src="" alt="" />
     <v-app-bar app color="white">
       <v-img
         class="d-none d-sm-flex header-icon"
