@@ -114,12 +114,12 @@ const routes = [
   },
   {
     path: '/useremergency',
-    name: 'Emergency',
+    name: 'UserEmergency',
     component: () => import('../views/User/UserEmergency.vue'),
   },
   {
     path: '/userprofile',
-    name: 'Emergency',
+    name: 'UserProfile',
     component: () => import('../views/User/UserProfile.vue'),
   },
 ];
