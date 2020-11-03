@@ -20,31 +20,46 @@
       </router-link>
     </v-app-bar>
 
-    <v-img src="../../assets/map-mobile-large.png"></v-img>
-    <v-card height="150">
-      <v-footer
-        color="primaryblack"
-        absolute
-        class="font-weight-medium d-sm-none"
-      >
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <router-link to="/useremergency" class="icon-footer">
-          <v-img src="../../assets/alert-inactive.png" min-width="30" />
-        </router-link>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <router-link to="/user">
-          <v-img src="../../assets/explore-active.png" min-width="30" />
-        </router-link>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <router-link to="/userprofile">
-          <v-img src="../../assets/profile-inactive.png" min-width="30" />
-        </router-link>
-        <v-spacer></v-spacer>
-      </v-footer>
-    </v-card>
+    <v-img class="d-sm-none" src="../../assets/map-mobile-large.png"></v-img>
+    <div class="d-sm-none">
+      <div>
+        <h4>To Sesame Street</h4>
+
+        <div>
+          <p>Time</p>
+          <h4>25 min</h4>
+        </div>
+        <div>
+          <p>Distance</p>
+          <h4>9. mi</h4>
+        </div>
+      </div>
+      <v-img src="../../assets/information-icon.png" max-width="35" />
+    </div>
+
+    <v-footer
+      min-height="60px"
+      color="primaryblack"
+      absolute
+      class="font-weight-medium d-sm-none"
+    >
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <router-link to="/useremergency" class="icon-footer">
+        <v-img src="../../assets/alert-inactive.png" min-width="35" />
+      </router-link>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <router-link to="/user">
+        <v-img src="../../assets/explore-active.png" min-width="35" />
+      </router-link>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <router-link to="/userprofile">
+        <v-img src="../../assets/profile-inactive.png" min-width="35" />
+      </router-link>
+      <v-spacer></v-spacer>
+    </v-footer>
   </div>
 </template>
 
