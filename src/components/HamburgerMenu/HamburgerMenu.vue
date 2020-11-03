@@ -6,10 +6,10 @@
   <!-- ##################### -->
   <!-- #### MOBILE VIEW #### -->
   <!-- ##################### -->
-  <v-container>
+  <v-container class="d-flex small">
     <v-dialog overlay v-model="showMenu">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn v-bind="attrs" v-on="on" class="primaryblack button right" dark>
+        <v-btn v-bind="attrs" v-on="on" class="primaryblack button" dark>
           <v-icon>mdi-menu</v-icon></v-btn
         >
       </template>
@@ -42,21 +42,21 @@
         >
         <v-btn
           router-link
-          to="/map"
+          to="/position"
           depressed
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-compass</v-icon>Map</v-btn
         >
         <v-btn
           router-link
-          to="/statistics"
+          to="/statistic"
           depressed
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-chart-bar</v-icon>Statistics</v-btn
         >
         <v-btn
           router-link
-          to="/help"
+          to="/tutorial"
           depressed
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-help</v-icon>Help</v-btn
@@ -120,6 +120,12 @@ export default {
 }
 
 .right {
-  margin-left: 80%;
+  margin: 0;
+  margin-right: -20px;
+}
+
+.small {
+  width: 20%;
+  margin-left: -20%;
 }
 </style>
