@@ -92,6 +92,6 @@ export default {};
 
 <style lang="scss" scoped>
 .v-progress-circular {
-margin: 4rem;
+margin: 4rem 2rem 2rem 2rem;
 }
 </style>
