@@ -1,5 +1,12 @@
 <template>
   <div>
+    <!-- ###################### -->
+    <!-- #### DESKTOP VIEW #### -->
+    <!-- ###################### -->
+
+    <!-- ##################### -->
+    <!-- #### MOBILE VIEW #### -->
+    <!-- ##################### -->
     <v-app-bar app class="d-sm-none" color="primaryblack">
       <v-spacer></v-spacer>
 
