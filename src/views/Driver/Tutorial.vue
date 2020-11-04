@@ -13,7 +13,8 @@
         Introduction
       </h2>
       <v-spacer></v-spacer>
-      <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon>
+      <!-- <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon> -->
+      <app-hamburger-menu></app-hamburger-menu>
     </v-app-bar>
 
     <v-container class="d-sm-none">
@@ -61,14 +62,15 @@
           <v-card-actions class="d-flex flex-column">
             <router-link to="/faq" class="helpBtn">
               <v-btn
-                class="helpBtn justify-center pa-3"
+                class="helpBtn justify-start pa-3 info"
                 depressed
                 elevation="2"
-                color="info"
                 large
+                outlined
+                color="primaryblack"
               >
-                <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon
-                >Help</v-btn
+                <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>Help
+                <p class="btnParagraph">Questions?</p></v-btn
               >
             </router-link>
           </v-card-actions>
@@ -139,5 +141,11 @@ export default {
 
 .introductionSubtext {
   margin-bottom: -8%;
+}
+
+.btnParagraph {
+  position: absolute;
+  left: 65%;
+  color: #f9f9f9;
 }
 </style>
