@@ -6,11 +6,13 @@ import vuetify from './plugins/vuetify';
 import SignInDialogPersonnel from './components/SignIn/SignInDialogPersonnel.vue';
 import SignInDialogUser from './components/SignIn/SignInDialogUser.vue';
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu.vue';
+import Calendar from './components/Calendar/Calendar.vue';
 
 Vue.config.productionTip = false;
 Vue.component('app-dialog-user', SignInDialogUser);
 Vue.component('app-dialog-personnel', SignInDialogPersonnel);
 Vue.component('app-hamburger-menu', HamburgerMenu);
+Vue.component('app-calendar-lightmode', Calendar);
 
 new Vue({
   router,
