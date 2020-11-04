@@ -1,6 +1,11 @@
 <template>
   <div>
     <v-app-bar app color="primaryblack">
+      <v-spacer></v-spacer>
+      <h2 justify="center" class="header-page-name d-sm-none">
+        Introduction
+      </h2>
+      <v-spacer></v-spacer>
       <v-img
         class="d-none d-sm-flex headerIcon"
         alt="Eezerlogo"
@@ -44,7 +49,7 @@
         <v-toolbar class="primaryblack">
           <v-spacer></v-spacer>
           <h2 justify="center" class="header-page-name">
-            Tutorial
+            Introduction
           </h2>
           <v-spacer></v-spacer>
         </v-toolbar>
