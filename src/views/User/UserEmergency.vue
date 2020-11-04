@@ -3,7 +3,38 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
-
+    <v-app-bar app class=".d-none .d-sm-flex" color="#202020">
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <h2 justify="center" style="color" class="header-page-name">
+        Emergency
+      </h2>
+      <v-spacer></v-spacer>
+      <router-link to="/user">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/map-desktop-inactive.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/userprofile">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/profile-desktop-inactive.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/useremergency">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/emergency-desktop-active.png"
+          max-width="120px"
+        />
+      </router-link>
+    </v-app-bar>
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
     <!-- ##################### -->
@@ -19,8 +50,8 @@
         <v-img alt="logout" src="../../assets/logout-icon.png" max-width="35" />
       </router-link>
     </v-app-bar>
-    <h2>What to do</h2>
-    <h4>
+    <h2 class="d-sm-none">What to do</h2>
+    <h4 class="d-sm-none">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut ero labore et dolore magna aliqua. Lorem ipsum dolor
       sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -29,6 +60,7 @@
       labore et dolore magna aliqua.
     </h4>
     <v-img
+      class="d-sm-none"
       alt="logout"
       src="../../assets/warning-mobile.png"
       max-width="80vw"

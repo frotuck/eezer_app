@@ -3,7 +3,38 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
-
+    <v-app-bar app class=".d-none .d-sm-flex" color="#202020">
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <h2 justify="center" style="color" class="header-page-name">
+        My Profile
+      </h2>
+      <v-spacer></v-spacer>
+      <router-link to="/user">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/map-desktop-inactive.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/userprofile">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/profile-desktop-active.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/useremergency">
+        <v-img
+          style="margin-bottom: -26px"
+          alt="logout"
+          src="../../assets/emergency-desktop-inactive.png"
+          max-width="120px"
+        />
+      </router-link>
+    </v-app-bar>
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
     <!-- ##################### -->

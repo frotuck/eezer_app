@@ -6,36 +6,31 @@
     <v-app-bar app class=".d-none .d-sm-flex" color="#202020">
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
       <h2 justify="center" style="color" class="header-page-name">
         Driver ETA
       </h2>
       <v-spacer></v-spacer>
-      <router-link to="/">
+      <router-link to="/user">
         <v-img
-          style="margin-bottom: -20px"
+          style="margin-bottom: -26px"
           alt="logout"
-          src="../../assets/map-desktop-inactive.png"
+          src="../../assets/map-desktop-active.png"
           max-width="120px"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/userprofile">
         <v-img
-          style="margin-bottom: -20px"
+          style="margin-bottom: -26px"
           alt="logout"
-          src="../../assets/profile-desktop-active.png"
+          src="../../assets/profile-desktop-inactive.png"
           max-width="120px"
         />
       </router-link>
-      <router-link to="/">
+      <router-link to="/useremergency">
         <v-img
-          style="margin-bottom: -20px"
+          style="margin-bottom: -26px"
           alt="logout"
-          src="../../assets/emergency-desktop-active.png"
+          src="../../assets/emergency-desktop-inactive.png"
           max-width="120px"
         />
       </router-link>
