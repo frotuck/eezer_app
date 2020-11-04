@@ -23,6 +23,7 @@
           router-link
           to="/emergency"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-bell</v-icon>Emergency</v-btn
         >
@@ -30,6 +31,7 @@
           router-link
           to="/profile"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-account</v-icon>Profile</v-btn
         >
@@ -37,6 +39,7 @@
           router-link
           to="/position"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-compass</v-icon>Map</v-btn
         >
@@ -44,6 +47,7 @@
           router-link
           to="/statistic"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-chart-bar</v-icon>Statistics</v-btn
         >
@@ -51,6 +55,7 @@
           router-link
           to="/tutorial"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-help</v-icon>Help</v-btn
         >
@@ -58,6 +63,7 @@
           router-link
           to="/"
           depressed
+          tile
           class="d-flex justify-space-evenly primary size margin"
           ><v-icon class="absolute-left">mdi-exit-to-app</v-icon>Logout</v-btn
         >
