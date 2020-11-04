@@ -105,6 +105,11 @@ const routes = [
     name: 'FAQ',
     component: () => import('../views/Driver/FAQ.vue')
   },
+  {
+    path: '/first-aid',
+    name: 'FirstAid',
+    component: () => import('../views/Driver/FirstAid.vue')
+  },
 
   //USER_VIEWS!!
   {
