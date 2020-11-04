@@ -100,6 +100,11 @@ const routes = [
     name: 'Tutorial',
     component: () => import('../views/Driver/Tutorial.vue'),
   },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: () => import('../views/Driver/FAQ.vue')
+  },
 
   //USER_VIEWS!!
   {
