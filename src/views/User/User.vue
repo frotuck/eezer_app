@@ -3,7 +3,43 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
-
+    <v-app-bar app class=".d-none .d-sm-flex" color="#202020">
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <h2 justify="center" style="color" class="header-page-name">
+        Driver ETA
+      </h2>
+      <v-spacer></v-spacer>
+      <router-link to="/">
+        <v-img
+          style="margin-bottom: -20px"
+          alt="logout"
+          src="../../assets/map-desktop-inactive.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/">
+        <v-img
+          style="margin-bottom: -20px"
+          alt="logout"
+          src="../../assets/profile-desktop-active.png"
+          max-width="120px"
+        />
+      </router-link>
+      <router-link to="/">
+        <v-img
+          style="margin-bottom: -20px"
+          alt="logout"
+          src="../../assets/emergency-desktop-active.png"
+          max-width="120px"
+        />
+      </router-link>
+    </v-app-bar>
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
     <!-- ##################### -->
