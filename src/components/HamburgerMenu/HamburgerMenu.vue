@@ -1,8 +1,4 @@
 <template>
-  <!-- ###################### -->
-  <!-- #### DESKTOP VIEW #### -->
-  <!-- ###################### -->
-
   <!-- ##################### -->
   <!-- #### MOBILE VIEW #### -->
   <!-- ##################### -->
@@ -16,7 +12,7 @@
       <v-card
         min-height="70vh"
         max-width="80vw"
-        class="d-flex flex-column justify-center align-center primaryblack position"
+        class="d-flex flex-column justify-center align-center primaryblack position desktop-size"
       >
         <v-btn
           depressed
@@ -87,6 +83,7 @@ export default {
   position: absolute;
   top: 0%;
   right: 0%;
+  border-radius: 0px;
   // transform: translate(-50%, -50%);
 }
 
@@ -125,7 +122,70 @@ export default {
 }
 
 .small {
+  position: absolute;
+  right: 0;
   width: 20%;
-  margin-left: -20%;
+  // margin-left: -20%;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-size {
+    max-width: 40vw !important;
+    max-height: 60vh !important;
+  }
+
+  .size {
+    max-width: 30vw !important;
+    max-height: 60vh !important;
+  }
+
+  .small {
+    width: 10%;
+    // margin-left: -10%;
+  }
+
+  .close {
+    margin-top: 3%;
+    max-width: 5vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop-size {
+    max-width: 30vw !important;
+    max-height: 60vh !important;
+  }
+
+  .small {
+    width: 10%;
+  }
+
+  .size {
+    max-width: 20vw !important;
+    min-height: 6vh !important;
+  }
+
+  .close {
+    margin-top: 4%;
+    max-width: 5vw;
+    margin-right: 8%;
+  }
+}
+
+@media screen and (min-width: 1264px) {
+  .desktop-size {
+    max-width: 30vw !important;
+    max-height: 65vh !important;
+  }
+
+  .small {
+    width: 10%;
+  }
+
+  .close {
+    margin-top: 3%;
+    max-width: 5vw;
+    margin-right: 15%;
+  }
 }
 </style>
