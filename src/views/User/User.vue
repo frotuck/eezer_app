@@ -4,6 +4,12 @@
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
     <v-app-bar app class=".d-none .d-sm-flex" color="#202020">
+      <v-img
+        class="d-none d-sm-flex header-icon"
+        alt="Eezerlogo"
+        src="../../assets/eezer-logo.png"
+        max-width="55"
+      />
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <h2 justify="center" style="color" class="header-page-name">
@@ -34,7 +40,26 @@
           max-width="120px"
         />
       </router-link>
+      <router-link to="/">
+        <v-img
+          style="margin-bottom: -26px; margin-left: 10px;"
+          alt="logout"
+          src="../../assets/logout-icon.png"
+          max-width="30"
+        />
+      </router-link>
+      <h4 style=" margin-bottom: -26px; color: white">
+        Logout
+      </h4>
     </v-app-bar>
+
+    <v-footer
+      min-height="40px"
+      color="#202020"
+      absolute
+      class=".d-none .d-sm-flex"
+    >
+    </v-footer>
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
     <!-- ##################### -->
