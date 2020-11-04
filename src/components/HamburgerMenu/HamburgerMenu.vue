@@ -1,11 +1,8 @@
 <template>
-  <!-- ##################### -->
-  <!-- #### MOBILE VIEW #### -->
-  <!-- ##################### -->
   <v-container class="d-flex small">
     <v-dialog overlay v-model="showMenu">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn v-bind="attrs" v-on="on" class="primaryblack button" dark>
+        <v-btn v-bind="attrs" v-on="on" class="primaryblack button" dark icon>
           <v-icon>mdi-menu</v-icon></v-btn
         >
       </template>
@@ -17,7 +14,7 @@
         <v-btn
           depressed
           dark
-          width="20vw"
+          icon
           class="primaryblack button close"
           @click="showMenu = !showMenu"
           ><v-icon>mdi-close</v-icon></v-btn
@@ -84,7 +81,6 @@ export default {
   top: 0%;
   right: 0%;
   border-radius: 0px;
-  // transform: translate(-50%, -50%);
 }
 
 .button {
@@ -102,8 +98,8 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 5%;
-  // margin-left: 60%;
+  margin-top: 4%;
+  margin-right: 8%;
 }
 
 .absolute-left {
@@ -125,7 +121,6 @@ export default {
   position: absolute;
   right: 0;
   width: 20%;
-  // margin-left: -20%;
 }
 
 @media screen and (min-width: 768px) {
@@ -141,12 +136,6 @@ export default {
 
   .small {
     width: 10%;
-    // margin-left: -10%;
-  }
-
-  .close {
-    margin-top: 3%;
-    max-width: 5vw;
   }
 }
 
@@ -167,8 +156,7 @@ export default {
 
   .close {
     margin-top: 4%;
-    max-width: 5vw;
-    margin-right: 8%;
+    margin-right: 15%;
   }
 }
 
@@ -184,8 +172,7 @@ export default {
 
   .close {
     margin-top: 3%;
-    max-width: 5vw;
-    margin-right: 15%;
+    margin-right: 20%;
   }
 }
 </style>
