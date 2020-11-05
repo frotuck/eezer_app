@@ -48,7 +48,17 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
+    <v-app-bar app class="d-sm-none" color="primaryblack">
+      <v-spacer></v-spacer>
 
+      <h2 justify="center" class="header-page-name">
+        Emergency
+      </h2>
+      <v-spacer></v-spacer>
+
+      <!-- <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon> -->
+      <app-hamburger-menu></app-hamburger-menu>
+    </v-app-bar>
     <v-container class="d-none d-sm-flex width-display background-desktop">
       <v-card class="cardContainer" max-width="50%" height="780">
         <v-toolbar class="primaryblack">
@@ -133,7 +143,13 @@
         </v-row>
       </v-card>
     </v-container>
-
+    <v-footer
+      min-height="40px"
+      color="#202020"
+      absolute
+      class="d-none d-sm-flex"
+    >
+    </v-footer>
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
     <!-- ##################### -->
