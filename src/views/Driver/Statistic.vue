@@ -134,6 +134,29 @@
           </v-card>
         </v-col>
       </v-row>
+      <v-footer
+        min-height="60px"
+        color="primaryblack"
+        absolute
+        class="font-weight-medium d-sm-none"
+      >
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/emergency" class="icon-footer">
+          <v-img src="../../assets/alert-inactive.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/position">
+          <v-img src="../../assets/explore-inactive.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/quarantine-pass">
+          <v-img src="../../assets/key-inactive.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+      </v-footer>
     </v-container>
   </div>
 </template>
