@@ -36,7 +36,7 @@
           <v-img
             style="margin-bottom: -26px"
             alt="logout"
-            src="../../assets/emergency-desktop-inactive.png"
+            src="../../assets/emergency-desktop-active.png"
             max-width="120px"
           />
         </router-link>
@@ -49,13 +49,24 @@
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
+    <v-app-bar app class="d-sm-none" color="primaryblack">
+      <v-spacer></v-spacer>
+
+      <h2 justify="center" class="header-page-name">
+        First Aid
+      </h2>
+      <v-spacer></v-spacer>
+
+      <!-- <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon> -->
+      <app-hamburger-menu></app-hamburger-menu>
+    </v-app-bar>
 
     <v-container class="d-none d-sm-flex width-display background-desktop">
       <v-card class="cardContainer" max-width="50%" height="780">
         <v-toolbar class="primaryblack">
           <v-spacer></v-spacer>
           <h2 justify="center" class="header-page-name">
-            Introduction
+            First Aid Guide
           </h2>
           <v-spacer></v-spacer>
         </v-toolbar>
@@ -86,15 +97,16 @@
         </v-row>
         <v-row>
           <v-col cols="12">
-            <div class="d-flex justify-center introductionTitle">
-              <h3>Introduction</h3>
+            <div class="d-flex justify-center firstAidTitle">
+              <h3>What to do</h3>
             </div>
-            <div class="desktopText d-flex justify-center">
+            <div class="desktopText d-flex ma-3">
               <p>
-                Check out any of our informative videos to get an introduction
-                to <br />
-                the basics! Take a look at our F.A.Q below if you have any
-                questions.
+                CPR: Call 911 or ask someone else to. Lay the person on their
+                back and open their airway. Check for breathing. If they are not
+                breathing, start CPR. Perform 30 chest compressions. Perform two
+                rescue breaths. Repeat until an ambulance or automated external
+                defibrillator (AED) arrives.
               </p>
             </div>
           </v-col>
@@ -102,28 +114,18 @@
         <v-row>
           <v-col cols="12">
             <v-card-actions class="d-flex flex-column">
-              <router-link to="/faq" class="desktopHelpBtn">
+              <router-link to="/emergency" class="desktopEmergencyBtn">
                 <v-btn
-                  class="desktopHelpBtn justify-start pa-3 info"
+                  class="desktopEmergencyBtn justify-start pa-3"
                   depressed
                   elevation="2"
                   large
-                  outlined
-                  color="primaryblack"
+                  color="#FC6F6F"
                 >
-                  <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>Help
-                  <p class="desktopBtnParagraph">Questions?</p></v-btn
-                >
-              </router-link>
-              <router-link to="/statistic" class="desktopSkipBtn">
-                <v-btn
-                  class="desktopSkipBtn pa-3"
-                  depressed
-                  elevation="2"
-                  large
-                  outlined
-                  color="#202020"
-                  >Skip</v-btn
+                  <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>
+                  <p class="desktopBtnParagraph">
+                    Emergency Help
+                  </p></v-btn
                 >
               </router-link>
             </v-card-actions>
@@ -134,7 +136,13 @@
         </v-row>
       </v-card>
     </v-container>
-    <v-footer min-height="60px" color="primaryblack" absolute> </v-footer>
+    <v-footer
+      min-height="40px"
+      color="#202020"
+      absolute
+      class="d-none d-sm-flex"
+    >
+    </v-footer>
 
     <!-- ##################### -->
     <!-- #### MOBILE VIEW #### -->
@@ -171,11 +179,13 @@
           <div class="d-flex justify-center instructionsTitle">
             <h3>What to do?</h3>
           </div>
-          <div class="instructionsSubtext d-flex justify-center">
+          <div class="firstAidSubtext d-flex justify-center">
             <p>
-              Check out any of our informative videos to get an introduction to
-              the basics! Take a look at our F.A.Q below if you have any
-              questions.
+              CPR: Call 911 or ask someone else to. Lay the person on their back
+              and open their airway. Check for breathing. If they are not
+              breathing, start CPR. Perform 30 chest compressions. Perform two
+              rescue breaths. Repeat until an ambulance or automated external
+              defibrillator (AED) arrives.
             </p>
           </div>
         </v-col>
@@ -183,17 +193,16 @@
       <v-row>
         <v-col cols="12">
           <v-card-actions class="d-flex flex-column">
-            <router-link to="/faq" class="helpBtn">
+            <router-link to="/faq" class="emergencyBtn">
               <v-btn
-                class="helpBtn justify-start pa-3 info"
+                class="emergencyBtn justify-start pa-3"
                 depressed
                 elevation="2"
                 large
-                outlined
-                color="primaryblack"
+                color="#FC6F6F"
               >
-                <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>Help
-                <p class="btnParagraph">Questions?</p></v-btn
+                <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>
+                <p class="btnParagraph">Emergency help</p></v-btn
               >
             </router-link>
           </v-card-actions>
@@ -201,7 +210,12 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-footer min-height="60px" color="primaryblack" absolute>
+          <v-footer
+            min-height="60px"
+            color="primaryblack"
+            absolute
+            class="font-weight-medium d-sm-none"
+          >
             <v-spacer></v-spacer>
             <v-spacer></v-spacer>
             <router-link to="/emergency" class="icon-footer">
@@ -234,13 +248,13 @@ export default {
           src: require('../../assets/first-aid-training-desktop.png'),
         },
         {
-          src: require('../../assets/tutorial-image-2.svg'),
+          src: require('../../assets/first-aid-training-desktop2.png'),
         },
         {
-          src: require('../../assets/tutorial-image-3.jpg'),
+          src: require('../../assets/first-aid-training-desktop3.png'),
         },
         {
-          src: require('../../assets/tutorial-image-4.jpg'),
+          src: require('../../assets/first-aid-training-desktop4.png'),
         },
       ],
     };
@@ -256,19 +270,20 @@ export default {
   left: 40%;
 }
 
-.helpBtn {
+.emergencyBtn {
   width: 100%;
   margin-bottom: 5%;
   text-decoration: none;
 }
 
-.introductionSubtext {
+.firstAidSubtext {
   margin-bottom: -8%;
+  margin-left: 3%;
 }
 
 .btnParagraph {
   position: absolute;
-  left: 65%;
+  left: 20%;
   color: #f9f9f9;
 }
 .width-display {
@@ -288,16 +303,17 @@ export default {
   background-position: center;
 }
 
-.desktopHelpBtn {
-  width: 50%;
+.desktopEmergencyBtn {
+  width: 80%;
   text-decoration: none;
   position: absolute;
   right: 10%;
+  margin-top: -2.5%;
 }
 
 .desktopBtnParagraph {
   position: absolute;
-  left: 50%;
+  left: 40%;
   color: #f9f9f9;
 }
 
@@ -310,13 +326,6 @@ export default {
   position: absolute;
   top: 31%;
   left: 39%;
-}
-
-.desktopSkipBtn {
-  text-decoration: none;
-  position: absolute;
-  width: 50%;
-  left: 10%;
 }
 
 .headerIcon {

@@ -52,7 +52,7 @@
       <v-spacer></v-spacer>
 
       <h2 justify="center" class="header-page-name">
-        Emergency
+        Introduction
       </h2>
       <v-spacer></v-spacer>
 
