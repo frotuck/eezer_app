@@ -50,7 +50,9 @@
           >
             <v-col>
               <v-card-actions class="d-flex flex-column">
-                <p>haha</p>
+                <p style="color: white; margin-top: -10px; margin-bottom: 0">
+                  Not registered?
+                </p>
                 <v-btn
                   depressed
                   class="secondary"
