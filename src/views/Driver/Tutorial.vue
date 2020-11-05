@@ -52,7 +52,7 @@
       <v-spacer></v-spacer>
 
       <h2 justify="center" class="header-page-name">
-        Emergency
+        Introduction
       </h2>
       <v-spacer></v-spacer>
 
@@ -359,20 +359,5 @@ export default {
 .headerIcon {
   position: absolute;
   left: 4%;
-}
-
-.emergencyLink {
-  position: absolute;
-  right: 15%;
-}
-
-.positionLink {
-  position: absolute;
-  right: 21.3%;
-}
-
-.profileLink {
-  position: absolute;
-  right: 27.6%;
 }
 </style>
