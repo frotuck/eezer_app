@@ -19,12 +19,14 @@
               label="Email"
               id="email"
               required
+              placeholder="I_Am_A_User@eezer.com"
             ></v-text-field>
             <v-text-field
               name="password"
               label="Password"
               id="password"
               required
+              placeholder="**********"
             ></v-text-field>
           </v-col>
         </v-row>
