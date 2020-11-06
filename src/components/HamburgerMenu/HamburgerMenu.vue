@@ -61,6 +61,14 @@
         >
         <v-btn
           router-link
+          to="/quarantine-pass"
+          depressed
+          tile
+          class="d-flex justify-space-evenly primary size margin"
+          ><v-icon class="absolute-left">mdi-key</v-icon>Quarantine Pass</v-btn
+        >
+        <v-btn
+          router-link
           to="/"
           depressed
           tile

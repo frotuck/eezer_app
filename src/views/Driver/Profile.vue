@@ -15,7 +15,7 @@
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
-        <router-link to="/position">
+        <router-link to="/position" class=" d-sm-none d-lg-flex">
           <v-img
             style="margin-bottom: -26px"
             alt="logout"
@@ -23,7 +23,7 @@
             max-width="120px"
           />
         </router-link>
-        <router-link to="/profile">
+        <router-link to="/profile" class=" d-sm-none d-lg-flex">
           <v-img
             style="margin-bottom: -26px"
             alt="logout"
@@ -31,17 +31,17 @@
             max-width="120px"
           />
         </router-link>
-        <router-link to="/emergency">
+        <router-link to="/emergency" class=" d-sm-none d-lg-flex">
           <v-img
-            style="margin-bottom: -26px"
+            style="margin-bottom: -26px; margin-right: -26px"
             alt="logout"
             src="../../assets/emergency-desktop-inactive.png"
             max-width="120px"
           />
         </router-link>
-        <v-spacer></v-spacer>
+        <v-spacer style="margin: -26px;"></v-spacer> <v-spacer></v-spacer>
 
-        <app-hamburger-menu style="margin-right: -40px"></app-hamburger-menu>
+        <app-hamburger-menu style=" float: left"></app-hamburger-menu>
       </v-app-bar>
     </div>
 

@@ -193,7 +193,7 @@
       <v-row>
         <v-col cols="12">
           <v-card-actions class="d-flex flex-column">
-            <router-link to="/faq" class="emergencyBtn">
+            <router-link to="/emergency" class="emergencyBtn">
               <v-btn
                 class="emergencyBtn justify-start pa-3"
                 depressed

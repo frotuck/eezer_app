@@ -70,6 +70,20 @@
       <!-- <v-app-bar-nav-icon color="white"></v-app-bar-nav-icon> -->
       <app-hamburger-menu></app-hamburger-menu>
     </v-app-bar>
+    <v-container class="d-flex flex-column">
+      <v-img
+        class="quarantinePass"
+        alt="quarantine-pass"
+        src="../../assets/quarantine-image.svg"
+        max-width="100%"
+      />
+      <v-card class="accent passCard">
+        <h6>Pass ID</h6>
+        <v-icon class="editPencil">mdi-lead-pencil</v-icon>
+        <p class="passNum">XXXX-XXXX-XXXX-1908</p>
+        <p></p
+      ></v-card>
+    </v-container>
     <v-footer
       min-height="60px"
       color="primaryblack"
@@ -100,4 +114,32 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.quarantinePass {
+  margin-top: 10%;
+}
+
+.passCard {
+  width: 80%;
+  height: 10%;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.editPencil {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  color: #f87502;
+}
+
+h6 {
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.passNum {
+  margin-left: 5%;
+  margin-top: 4%;
+}
+</style>
