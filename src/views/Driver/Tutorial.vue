@@ -60,7 +60,7 @@
       <app-hamburger-menu></app-hamburger-menu>
     </v-app-bar>
     <v-container class="d-none d-sm-flex width-display background-desktop">
-      <v-card class="cardContainer" max-width="50%" height="780">
+      <v-card class="cardContainer" max-width="50%" height="900">
         <v-toolbar class="primaryblack">
           <v-spacer></v-spacer>
           <h2 justify="center" class="header-page-name">
@@ -110,18 +110,18 @@
         </v-row>
         <v-row>
           <v-col cols="12">
-            <v-card-actions class="d-flex flex-column">
+            <v-card-actions height="" class="d-flex flex-column">
               <router-link to="/faq" class="desktopHelpBtn">
                 <v-btn
-                  class="desktopHelpBtn justify-start pa-3 info"
+                  class="desktopHelpBtn pa-3 info"
                   depressed
                   elevation="2"
                   large
                   outlined
                   color="primaryblack"
                 >
-                  <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon>Help
-                  <p class="desktopBtnParagraph">Questions?</p></v-btn
+                  <v-icon class="helpIcon pa-2">mdi-help-circle</v-icon
+                  >Help</v-btn
                 >
               </router-link>
               <router-link to="/statistic" class="desktopSkipBtn">
@@ -320,8 +320,8 @@ export default {
 }
 .background-desktop {
   background-image: url(../../assets/desktop-background-2.png);
-  background-size: auto 126%;
-  height: 90vh;
+  background-size: auto 130%;
+  height: 110vh;
   background-position: center;
 }
 
@@ -330,6 +330,13 @@ export default {
   text-decoration: none;
   position: absolute;
   right: 10%;
+}
+
+.desktopSkipBtn {
+  text-decoration: none;
+  position: absolute;
+  width: 50%;
+  left: 10%;
 }
 
 .desktopBtnParagraph {
@@ -349,15 +356,11 @@ export default {
   left: 39%;
 }
 
-.desktopSkipBtn {
-  text-decoration: none;
-  position: absolute;
-  width: 50%;
-  left: 10%;
-}
-
 .headerIcon {
   position: absolute;
   left: 4%;
+}
+
+@media screen and (min-width: 1024px) {
 }
 </style>
