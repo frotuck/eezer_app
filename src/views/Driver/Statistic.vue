@@ -48,6 +48,76 @@
         <app-hamburger-menu style="margin-right: -40px"></app-hamburger-menu>
       </v-app-bar>
     </div>
+	<v-card class="mx-auto mt-sm-15 mt-8"
+    max-width="800">
+		<v-toolbar class="primaryblack text-center d-none d-md-flex justify-center"
+        dark>
+<h3>Statistic</h3>
+		</v-toolbar>
+		<v-container>
+<v-row>
+        <v-col cols="12">
+          <v-card color="">
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-progress-circular
+                :rotate="360"
+                :size="120"
+                :width="15"
+                :value="70"
+                color="#F87502"
+              >
+                <h3>2.8mil</h3>
+              </v-progress-circular>
+              <v-card-title class="">
+                Travel Dist.
+              </v-card-title>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+	<v-row>
+        <v-col cols="12">
+          <v-card color="#FCC99C">
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-card-title class="">
+                Avg Travel.
+              </v-card-title>
+              <v-progress-circular
+                :rotate="360"
+                :size="120"
+                :width="15"
+                :value="40"
+                color="#F87502"
+              >
+                <h3>3hrs</h3>
+              </v-progress-circular>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col cols="12">
+          <v-card color="#F87502">
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-progress-circular
+                :rotate="360"
+                :size="120"
+                :width="15"
+                :value="70"
+                color="#FCC99C"
+              >
+                <h3>10 min</h3>
+              </v-progress-circular>
+              <v-card-title class="">
+                Response.
+              </v-card-title>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+		</v-container>
+	</v-card>
 
     <v-footer
       min-height="40px"
@@ -72,7 +142,7 @@
     </v-app-bar>
 
     <v-container class="d-sm-none">
-      <v-row>
+     <!-- <v-row>
         <v-col cols="12">
           <v-card color="">
             <div class="d-flex flex-no-wrap justify-space-between">
@@ -133,7 +203,7 @@
             </div>
           </v-card>
         </v-col>
-      </v-row>
+      </v-row>-->
       <v-footer
         min-height="60px"
         color="primaryblack"
