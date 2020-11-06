@@ -51,9 +51,15 @@
       </v-app-bar>
     </div>
       <v-card
-    class="mx-auto"
+    class="mx-auto mt-sm-15 mt-8"
     max-width="800"
   >
+        <v-toolbar
+        class="primaryblack text-center d-none d-md-flex justify-center"
+        dark
+      >
+        <h3>Route</h3>
+      </v-toolbar>
     <v-img
       class="white--text align-end"
       height="500px"
