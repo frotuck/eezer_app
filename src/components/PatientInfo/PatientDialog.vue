@@ -7,11 +7,14 @@
     </template>
     <v-card class="orange lighten-2">
       <v-container>
-        <v-row class="mx-sm-3 mx-8">
-          <v-col class="mx-sm-15">
-            <div 
-            class="text-center pa-10 mx-sm-15 orange lighten-4 rounded-circle">
+        <v-row justify="center">
+          <v-col cols="9"
+          sm="6"
+          md="6">
+            <div
+            class="text-center orange lighten-4 rounded-circle pa-10">
     <v-avatar
+    class="text-center"
       size="128"
       color="white"
     >
@@ -23,15 +26,15 @@
           </v-col>
         </v-row>
               <div class="text-center">
-            <v-card-title class="mb-0"
-            >Jane Doe</v-card-title>
+            <h2 class="mb-0"
+            >Jane Doe</h2>
             <v-card-text
             >Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, molestiae. Necessitatibus ducimus aliquam magni, consequatur.
             </v-card-text>
             </div>
-        <v-row class="d-flex">
+        <v-row justify="center">
           <v-col>
-              <v-card-title class="text-center px-0">Locate User</v-card-title>
+              <h2 class="text-center px-0">Locate User</h2>
             <v-card-actions class="d-flex flex-column">
               <v-btn
               fab
@@ -41,7 +44,7 @@
             </v-card-actions>
           </v-col>
             <v-col>
-                <v-card-title class="text-center">Call User</v-card-title>
+                <h2 class="text-center">Call User</h2>
               <v-card-actions class="d-flex flex-column">
                <v-btn
                 fab
