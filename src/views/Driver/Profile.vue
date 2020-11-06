@@ -55,7 +55,7 @@
       <v-container class="boxshadow pa-0">
         <v-img src="@/assets/profile-picture.png"></v-img>
       </v-container>
-      <v-container class="margin-2">
+      <v-container>
         <h3>John Doe</h3>
         <h6>San Francisco, CA</h6>
         <p>
@@ -137,10 +137,6 @@ export default {
 
 .margin-left {
   margin-left: 2%;
-}
-
-.margin-2 {
-  margin: 2%;
 }
 
 @media screen and (max-width: 768px) {
