@@ -62,7 +62,7 @@
     </v-app-bar>
 
     <v-container class="d-none d-sm-flex width-display background-desktop">
-      <v-card class="cardContainer" max-width="50%" height="780">
+      <v-card class="cardContainer" max-width="50%" height="920">
         <v-toolbar class="primaryblack">
           <v-spacer></v-spacer>
           <h2 justify="center" class="header-page-name">
@@ -101,7 +101,7 @@
               <h3>What to do</h3>
             </div>
             <div class="desktopText d-flex ma-3">
-              <p>
+              <p class="instructionsText">
                 CPR: Call 911 or ask someone else to. Lay the person on their
                 back and open their airway. Check for breathing. If they are not
                 breathing, start CPR. Perform 30 chest compressions. Perform two
@@ -298,8 +298,8 @@ export default {
 }
 .background-desktop {
   background-image: url(../../assets/desktop-background-2.png);
-  background-size: auto 126%;
-  height: 90vh;
+  background-size: auto 130%;
+  height: 120vh;
   background-position: center;
 }
 
@@ -308,7 +308,12 @@ export default {
   text-decoration: none;
   position: absolute;
   right: 10%;
-  margin-top: -2.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .desktopBtnParagraph {
+    margin-left: -20%;
+  }
 }
 
 .desktopBtnParagraph {
@@ -331,5 +336,9 @@ export default {
 .headerIcon {
   position: absolute;
   left: 4%;
+}
+
+.instructionsText {
+  font-size: 14px;
 }
 </style>
