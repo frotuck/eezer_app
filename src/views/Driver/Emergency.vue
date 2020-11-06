@@ -78,7 +78,7 @@
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>
       <router-link to="/emergency" class="icon-footer">
-        <v-img src="../../assets/alert-active.png" min-width="35" />
+        <v-img src="../../assets/alert-inactive.png" min-width="35" />
       </router-link>
       <v-spacer></v-spacer>
       <v-spacer></v-spacer>

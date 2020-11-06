@@ -7,8 +7,8 @@
         >
       </template>
       <v-card
-        min-height="70vh"
-        max-width="80vw"
+        min-height="80vh"
+        max-width="90vw"
         class="d-flex flex-column justify-center align-center primaryblack position desktop-size"
       >
         <v-btn
