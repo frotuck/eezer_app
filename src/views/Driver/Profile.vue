@@ -1,50 +1,68 @@
 <template>
   <div id="desktop-background">
-    <div class="d-none d-sm-flex">
-      <v-app-bar app color="#202020">
-        <v-img
-          class="d-none d-sm-flex header-icon"
-          alt="Eezerlogo"
-          src="../../assets/eezer-logo.png"
-          max-width="55"
-        />
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <router-link to="/position" class=" d-sm-none d-lg-flex">
+    <!--   ##################### -->
+    <!--  ###### HEADER ###### -->
+    <!-- ################### -->
+    <v-app-bar app color="primaryblack text-center pa-0">
+      <v-container
+        width="100%"
+        height="100%"
+        class="d-flex justify-space-around align-center pa-0 ma-0"
+      >
+        <h2
+          justify="center"
+          class="header-page-name justify-self-center d-md-none"
+        >
+          My Profile
+        </h2>
+        <v-container
+          width="100%"
+          height="100%"
+          class="d-none d-md-flex justify-space-around pa-0 ma-0"
+        >
           <v-img
-            style="margin-bottom: -26px"
-            alt="logout"
-            src="../../assets/map-desktop-inactive.png"
-            max-width="120px"
+            class="d-flex header-icon"
+            alt="Eezerlogo"
+            style="margin-left: 5%;"
+            src="../../assets/eezer-logo.png"
+            max-width="55"
           />
-        </router-link>
-        <router-link to="/profile" class=" d-sm-none d-lg-flex">
-          <v-img
-            style="margin-bottom: -26px"
-            alt="logout"
-            src="../../assets/profile-desktop-active.png"
-            max-width="120px"
-          />
-        </router-link>
-        <router-link to="/emergency" class=" d-sm-none d-lg-flex">
-          <v-img
-            style="margin-bottom: -26px; margin-right: -26px"
-            alt="logout"
-            src="../../assets/emergency-desktop-inactive.png"
-            max-width="120px"
-          />
-        </router-link>
-        <v-spacer style="margin: -26px;"></v-spacer> <v-spacer></v-spacer>
-
-        <app-hamburger-menu style=" float: left"></app-hamburger-menu>
-      </v-app-bar>
-    </div>
-
+          <v-container
+            height="100%"
+            class="d-flex justify-end align-end pa-0 margin-right-fix"
+          >
+            <router-link to="/position">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="logout"
+                src="../../assets/map-desktop-inactive.png"
+                max-width="120px"
+              />
+            </router-link>
+            <router-link to="/profile">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="logout"
+                src="../../assets/profile-desktop-active.png"
+                max-width="120px"
+              />
+            </router-link>
+            <router-link to="/emergency">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="logout"
+                src="../../assets/emergency-desktop-inactive.png"
+                max-width="120px"
+              />
+            </router-link>
+          </v-container>
+        </v-container>
+      </v-container>
+      <app-hamburger-menu></app-hamburger-menu>
+    </v-app-bar>
+    <!--   ############################ -->
+    <!--  ###### PAGE CONTENT ####### -->
+    <!-- ########################## -->
     <v-card class="box-shadow-none size">
       <v-toolbar
         class="primaryblack text-center d-none d-md-flex justify-center"
@@ -73,41 +91,26 @@
         <app-calendar-lightmode></app-calendar-lightmode>
       </v-container>
     </v-card>
-    <v-app-bar color="primaryblack" bottom></v-app-bar>
-    <!-- ##################### -->
-    <!-- #### MOBILE VIEW #### -->
-    <!-- ##################### -->
-    <v-app-bar app class="d-sm-none" color="primaryblack">
-      <v-spacer></v-spacer>
-
-      <h2 justify="center" class="header-page-name">
-        Profile
-      </h2>
-      <v-spacer></v-spacer>
-      <app-hamburger-menu></app-hamburger-menu>
-    </v-app-bar>
-    <v-footer
-      min-height="60px"
-      color="primaryblack"
-      absolute
-      class="font-weight-medium d-sm-none"
-    >
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/emergency" class="icon-footer">
-        <v-img src="../../assets/alert-inactive.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/position">
-        <v-img src="../../assets/explore-inactive.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/quarantine-pass">
-        <v-img src="../../assets/key-inactive.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
+    <!--   ##################### -->
+    <!--  ###### FOOTER ###### -->
+    <!-- ################### -->
+    <v-footer color="primaryblack" absolute min-height="40px">
+      <v-container
+        class="font-weight-medium d-flex justify-space-between d-sm-none pa-0 ma-0"
+      >
+        <router-link to="/emergency" class="icon-footer margin-icon-left">
+          <v-img src="../../assets/alert-active.png" min-width="35%" />
+        </router-link>
+        <router-link to="/position" class="icon-footer margin-icon">
+          <v-img src="../../assets/explore-inactive.png" min-width="35%" />
+        </router-link>
+        <router-link
+          to="/quarantine-pass"
+          class="icon-footer margin-icon-right"
+        >
+          <v-img src="../../assets/key-inactive.png" min-width="35%" />
+        </router-link>
+      </v-container>
     </v-footer>
   </div>
 </template>
@@ -169,10 +172,16 @@ export default {
   #desktop-background {
     background-image: url(../../assets/desktop-background-2.png);
     background-size: auto 126%;
-    height: auto;
+    height: 100%;
     width: 100vw;
     background-position: center;
-    padding-top: 5%;
+    padding-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1263px) {
+  .margin-right-fix {
+    margin-right: 7%;
   }
 }
 
