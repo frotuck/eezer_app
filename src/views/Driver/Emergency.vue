@@ -126,7 +126,7 @@
             <div
               class="circle white d-flex flex-column justify-center justify-self-start align-self-center ma-0"
             >
-              <v-icon color="primaryblack">mdi-help</v-icon>
+              <v-icon color="primaryblack">mdi-medical-bag</v-icon>
             </div>
             <h2 class="justify-self-center align-self-center">
               First Aid Guide
