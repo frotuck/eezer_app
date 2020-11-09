@@ -11,54 +11,6 @@ const routes = [
     component: Home,
   },
 
-  //ADMIN_VIEWS!!
-  {
-    path: '/admin-hub',
-    name: 'AdminHub',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/Admin/Hub.vue'),
-  },
-  {
-    path: '/more-info',
-    name: 'MoreInfoPersonnel',
-    component: () => import('../views/Admin/MoreInfoPersonnel.vue'),
-  },
-  {
-    path: '/search',
-    name: 'AdminSearch',
-    component: () => import('../views/Admin/Search.vue'),
-  },
-  {
-    path: '/sign-up-new-person',
-    name: 'AdminSignUp',
-    component: () => import('../views/Admin/SignUpNewPersonnel.vue'),
-  },
-
-  //CUSTOMER_SERVICE_VIEWS!!
-  {
-    path: '/driver-info',
-    name: 'DriverInfo',
-    component: () => import('../views/Customer_Service/DriverInfo.vue'),
-  },
-  {
-    path: '/feed',
-    name: 'Feed',
-    component: () => import('../views/Customer_Service/Feed.vue'),
-  },
-  {
-    path: '/customer-service-hub',
-    name: 'CustomerServiceHub',
-    component: () => import('../views/Customer_Service/Hub.vue'),
-  },
-  {
-    path: '/patient',
-    name: 'Patient',
-    component: () => import('../views/Customer_Service/Patient.vue'),
-  },
-
   //DRIVER_VIEWS!!
   {
     path: '/emergency',
