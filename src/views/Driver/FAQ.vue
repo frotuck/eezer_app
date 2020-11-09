@@ -75,7 +75,12 @@
         class="d-flex flex-column align-center text-center"
         max-width="60vw"
       >
-        <v-btn height="60px" depressed tile class="info white-text border">
+        <v-btn
+          height="60px"
+          depressed
+          tile
+          class="info white-text border margin-top"
+        >
           <div
             class="circle white d-flex flex-column justify-center align-center"
           >
@@ -259,12 +264,13 @@ export default {};
 
   .flex-change {
     flex-direction: row !important;
-    // justify-content: center;
-    // justify-items: center;
     justify-content: center;
-    // align-content: center;
     align-items: center;
     text-align: start;
+  }
+
+  .margin-top {
+    margin-top: 2%;
   }
 }
 
