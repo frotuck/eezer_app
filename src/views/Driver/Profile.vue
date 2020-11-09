@@ -77,17 +77,15 @@
         <h3>John Doe</h3>
         <h6>San Francisco, CA</h6>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
+          Drives completed: 12 <br />
+          Manually updated drives: 5 <br />
+          Account created: 2020-09-02 <br />
+          Full name: John Johnothy Doe <br />
+          Total drive time: 110h <br />
+          Total miles driven: 140
         </p>
       </v-container>
       <v-container class="margin-bot responsive">
-        <v-switch
-          v-model="switch1"
-          inset
-          :label="`${checkTime()}`"
-          class="margin-left"
-        ></v-switch>
         <app-calendar-lightmode></app-calendar-lightmode>
       </v-container>
     </v-card>
@@ -118,20 +116,17 @@
 export default {
   name: 'Profile',
   data() {
-    return {
-      switch1: true,
-    };
-  },
-  methods: {
-    checkTime() {
-      return this.switch1 ? 'AM' : 'PM';
-    },
+    return {};
   },
 };
 </script>
 <style lang="scss" scoped>
-.boxshadow {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.158);
+.margin-icon-left {
+  margin-left: 10%;
+}
+
+.margin-icon-right {
+  margin-right: 10%;
 }
 
 .margin-bot {

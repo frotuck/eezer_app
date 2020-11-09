@@ -213,10 +213,6 @@ export default {};
   color: white;
 }
 
-.box-shadow-none {
-  box-shadow: none !important;
-}
-
 .box {
   min-width: 60vw;
   min-height: 20vh;
