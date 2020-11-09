@@ -95,55 +95,55 @@
           class="d-flex align-center flex-column margin-between flex-change"
           max-width="50vw"
         >
-          <h4 class="question">How to do this?</h4>
+          <h4 class="question">How do I navigate the app?</h4>
           <h5 class="answer">
-            Scan the QR code to find information regarding the active Quarantine
-            Pass. If failure to successfully scan the QR code, please manually
-            fill in the information.
+            You can click on the hamburgermenu for navigation on mobile devices
+            and desktop, or use the three logos to navigate to either Map,
+            Profile or Emergency pages on desktop version of the app.
           </h5>
         </div>
         <div
           class="d-flex align-center flex-column margin-between flex-change"
           max-width="50vw"
         >
-          <h4 class="question">How to do this?</h4>
+          <h4 class="question">I forgot my password</h4>
           <h5 class="answer">
-            Scan the QR code to find information regarding the active Quarantine
-            Pass. If failure to successfully scan the QR code, please manually
-            fill in the information.
+            Send us an e-mail and we will assist you with your account issues.
+            Only during business days mon-fri, usual time it takes for us to
+            response is 1-2 business days.
           </h5>
         </div>
         <div
           class="d-flex align-center flex-column margin-between flex-change"
           max-width="50vw"
         >
-          <h4 class="question">How to do this?</h4>
+          <h4 class="question">My text to speech is not working</h4>
           <h5 class="answer">
-            Scan the QR code to find information regarding the active Quarantine
-            Pass. If failure to successfully scan the QR code, please manually
-            fill in the information.
+            Try turning your volume up on your device, or check that your
+            headphones/speakers are working correctly. Please send us an e-mail
+            if the issue still is not resolved.
           </h5>
         </div>
         <div
           class="d-flex align-center flex-column margin-between flex-change"
           max-width="50vw"
         >
-          <h4 class="question">How to do this?</h4>
+          <h4 class="question">My GPS stopped working</h4>
           <h5 class="answer">
-            Scan the QR code to find information regarding the active Quarantine
-            Pass. If failure to successfully scan the QR code, please manually
-            fill in the information.
+            The GPS device might not have the best connection everywhere,
+            therefore you have to manually input your completed drives
+            occasionally.
           </h5>
         </div>
         <div
           class="d-flex align-center flex-column margin-between flex-change"
           max-width="50vw"
         >
-          <h4 class="question">How to do this?</h4>
+          <h4 class="question">My bicycle has a flat tire</h4>
           <h5 class="answer">
-            Scan the QR code to find information regarding the active Quarantine
-            Pass. If failure to successfully scan the QR code, please manually
-            fill in the information.
+            Please call the customer support line as they can assist drivers
+            with help by sending a mechanic to your location. The number is
+            <b>+1234 56789</b>.
           </h5>
         </div>
         <v-btn
@@ -251,14 +251,19 @@ export default {};
   }
 
   .question {
-    max-width: 40%;
+    max-width: 110px;
+    text-align: center;
+    word-wrap: break-word;
     margin-right: 10%;
   }
 
   .flex-change {
     flex-direction: row !important;
+    // justify-content: center;
+    // justify-items: center;
     justify-content: center;
-    align-content: center;
+    // align-content: center;
+    align-items: center;
     text-align: start;
   }
 }
