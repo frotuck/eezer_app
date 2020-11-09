@@ -90,18 +90,18 @@
               <div
                 class="circle white d-flex flex-column justify-center align-center push-down"
               >
-                <v-icon color="primaryblack">mdi-phone</v-icon>
+                <v-icon color="primaryblack">mdi-hospital-box-outline</v-icon>
               </div>
               <h5>Emergency</h5>
               <h2>10177</h2>
             </div>
           </v-btn>
-          <v-btn tile class="error white-text box">
+          <v-btn tile class="accent white-text box">
             <div class="d-flex flex-column justify-center align-center box">
               <div
                 class="circle white d-flex flex-column justify-center align-center push-down"
               >
-                <v-icon color="primaryblack">mdi-phone</v-icon>
+                <v-icon color="primaryblack">mdi-face-agent</v-icon>
               </div>
               <h5>Customer Service</h5>
               <h2>+1234 56789</h2>
