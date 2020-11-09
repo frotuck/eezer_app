@@ -290,69 +290,7 @@ export default {
   text-decoration: none;
 }
 
-.skipBtn {
-}
-
 .introductionText {
   margin-bottom: -8%;
 }
-/*
-
-.btnParagraph {
-  position: absolute;
-  left: 65%;
-  color: #f9f9f9;
-}
-.width-display {
-  min-width: 100%;
-  padding: 0px;
-}
-
-.cardContainer {
-  position: absolute;
-  left: 25%;
-  top: 2%;
-}
-.background-desktop {
-  background-image: url(../../assets/desktop-background-2.png);
-  background-size: auto 130%;
-  height: 110vh;
-  background-position: center;
-}
-
-.desktopHelpBtn {
-  width: 50%;
-  text-decoration: none;
-  position: absolute;
-  right: 10%;
-}
-
-.desktopSkipBtn {
-  text-decoration: none;
-  position: absolute;
-  width: 50%;
-  left: 10%;
-}
-
-.desktopBtnParagraph {
-  position: absolute;
-  left: 50%;
-  color: #f9f9f9;
-}
-
-.carousel {
-  margin-top: -1.4%;
-}
-
-.desktopPlayBtn {
-  width: 20%;
-  position: absolute;
-  top: 31%;
-  left: 39%;
-}
-
-.headerIcon {
-  position: absolute;
-  left: 4%;
-} */
 </style>
