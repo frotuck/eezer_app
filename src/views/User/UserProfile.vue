@@ -129,8 +129,7 @@
 </template>
 <script>
 export default {
-  name: 'Profile',
-  data() {},
+  name: 'UserProfile',
 };
 </script>
 <style lang="scss" scoped>

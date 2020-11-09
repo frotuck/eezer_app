@@ -1,128 +1,134 @@
 <template>
-  <div desktop-background>
-    <!-- ###################### -->
-    <!-- #### DESKTOP VIEW #### -->
-    <!-- ###################### -->
-    <div class="d-none d-sm-flex">
-      <v-app-bar app color="#202020">
-        <v-img
-          class="d-none d-sm-flex header-icon"
-          alt="Eezerlogo"
-          src="../../assets/eezer-logo.png"
-          max-width="55"
-        />
-        <v-spacer></v-spacer>
-        <v-spacer></v-spacer>
-        <h2 justify="center" style="color" class="header-page-name">
+  <div id="desktop-background">
+    <!--   ##################### -->
+    <!--  ###### HEADER ###### -->
+    <!-- ################### -->
+    <v-app-bar app color="primaryblack text-center pa-0">
+      <v-container
+        width="100%"
+        height="100%"
+        class="d-flex justify-space-around align-center pa-0 ma-0"
+      >
+        <h2
+          justify="center"
+          class="header-page-name justify-self-center d-md-none"
+        >
           Emergency
         </h2>
-        <v-spacer></v-spacer>
-        <router-link to="/user">
+        <v-container
+          width="100%"
+          height="100%"
+          class="d-none d-md-flex justify-space-around pa-0 ma-0"
+        >
           <v-img
-            style="margin-bottom: -26px"
-            alt="logout"
-            src="../../assets/map-desktop-inactive.png"
-            max-width="120px"
+            class="d-flex header-icon"
+            alt="Eezerlogo"
+            style="margin-left: 5%;"
+            src="../../assets/eezer-logo.png"
+            max-width="55"
           />
-        </router-link>
-        <router-link to="/userprofile">
-          <v-img
-            style="margin-bottom: -26px"
-            alt="logout"
-            src="../../assets/profile-desktop-inactive.png"
-            max-width="120px"
-          />
-        </router-link>
-        <router-link to="/useremergency">
-          <v-img
-            style="margin-bottom: -26px"
-            alt="logout"
-            src="../../assets/emergency-desktop-active.png"
-            max-width="120px"
-          />
-        </router-link>
-        <router-link to="/">
-          <v-img
-            style="margin-bottom: -26px; margin-left: 10px;"
-            alt="logout"
-            src="../../assets/logout-icon.png"
-            max-width="30"
-          />
-        </router-link>
-        <h4 style=" margin-bottom: -26px; color: white">
-          Logout
-        </h4>
-      </v-app-bar>
-    </div>
-    <v-footer
-      min-height="40px"
-      color="#202020"
-      absolute
-      class=".d-none .d-sm-flex"
-    >
-    </v-footer>
-    <!-- ##################### -->
-    <!-- #### MOBILE VIEW #### -->
-    <!-- ##################### -->
-    <v-app-bar app class="d-sm-none" color="primaryblack">
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-
-      <h2 justify="center" style="color" class="header-page-name">
-        Emergency
-      </h2>
-      <v-spacer></v-spacer>
+          <v-container
+            height="100%"
+            class="d-flex justify-end align-end pa-0 margin-right-fix"
+          >
+            <router-link to="/user">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="map"
+                src="../../assets/map-desktop-inactive.png"
+                max-width="120px"
+              />
+            </router-link>
+            <router-link to="/userprofile">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="logout"
+                src="../../assets/profile-desktop-inactive.png"
+                max-width="120px"
+              />
+            </router-link>
+            <router-link to="/useremergency">
+              <v-img
+                style="margin-bottom: -4px;"
+                alt="logout"
+                src="../../assets/emergency-desktop-active.png"
+                max-width="120px"
+              />
+            </router-link>
+          </v-container>
+        </v-container>
+      </v-container>
       <router-link to="/">
-        <v-img alt="logout" src="../../assets/logout-icon.png" max-width="35" />
+        <v-img alt="logout" src="../../assets/logout-icon.png" max-width="30" />
       </router-link>
     </v-app-bar>
-    <h2 class="d-sm-none">What to do</h2>
-    <h4 class="d-sm-none">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut ero labore et dolore magna aliqua. Lorem ipsum dolor
-      sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-      ut ero labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
-      consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero
-      labore et dolore magna aliqua.
-    </h4>
-    <v-img
-      class="d-sm-none"
-      alt="logout"
-      src="../../assets/warning-mobile.png"
-      max-width="80vw"
-    />
+    <!--   ############################ -->
+    <!--  ###### PAGE CONTENT ####### -->
+    <!-- ########################## -->
+    <v-card class="box-shadow-none size">
+      <v-toolbar
+        class="primaryblack text-center d-none d-md-flex justify-center"
+        dark
+      >
+        <h3>Emergency</h3>
+      </v-toolbar>
 
-    <v-footer
-      min-height="60px"
-      color="primaryblack"
-      absolute
-      class="font-weight-medium d-sm-none"
-    >
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/useremergency" class="icon-footer">
-        <v-img src="../../assets/alert-active.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/user">
-        <v-img src="../../assets/explore-inactive.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
-      <v-spacer></v-spacer>
-      <router-link to="/userprofile">
-        <v-img src="../../assets/profile-inactive.png" min-width="35" />
-      </router-link>
-      <v-spacer></v-spacer>
+      <v-container class="  d-flex flex-column  	margin-bot responsive">
+        <h3 class="center-text">What to do</h3>
+        <p>
+          Click on Request Emergency Help to get in contact with 911 or customer
+          service for immediate help.
+        </p>
+        <p>
+          CPR: Call 911 or ask someone else to. Lay the person on their back and
+          open their airway. Check for breathing. If they are not breathing,
+          start CPR. Perform 30 chest compressions. Perform two rescue breaths.
+          Repeat until an ambulance or automated external defibrillator (AED)
+          arrives.
+        </p>
+        <v-img
+          alt="logout"
+          src="../../assets/warning-mobile.png"
+          max-width="80vw"
+        />
+      </v-container>
+    </v-card>
+    <!--   ##################### -->
+    <!--  ###### FOOTER ###### -->
+    <!-- ################### -->
+    <v-footer color="primaryblack" absolute min-height="40px">
+      <v-container
+        class="font-weight-medium d-flex d-sm-none d-none d-sm-flex d-md-none justify-space-between pa-0 ma-0"
+      >
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/useremergency" class="icon-footer">
+          <v-img src="../../assets/alert-active.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/user">
+          <v-img src="../../assets/explore-inactive.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <router-link to="/userprofile">
+          <v-img src="../../assets/profile-inactive.png" min-width="35" />
+        </router-link>
+        <v-spacer></v-spacer>
+      </v-container>
     </v-footer>
   </div>
 </template>
-
 <script>
-export default {};
+export default {
+  name: 'UserEmergency',
+};
 </script>
-
 <style lang="scss" scoped>
+.center-text {
+  text-align: center;
+}
 .boxshadow {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.158);
 }
@@ -141,7 +147,7 @@ export default {};
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 0px) {
   .responsive {
     max-width: 80%;
     max-height: 80%;
@@ -163,12 +169,29 @@ export default {};
   }
 
   #desktop-background {
-    background-image: url(../../assets/desktop-background-1.png);
+    background-image: url(../../assets/desktop-background-2.png);
     background-size: auto 126%;
     height: 100%;
     width: 100vw;
     background-position: center;
     padding-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1263px) {
+  .margin-right-fix {
+    margin-right: 7%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .size {
+    max-width: 40vw;
+    min-height: 80vh;
+  }
+
+  .responsive {
+    padding-bottom: 10%;
   }
 }
 </style>
