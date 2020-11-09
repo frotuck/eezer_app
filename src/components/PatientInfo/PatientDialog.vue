@@ -1,4 +1,4 @@
-!<template>
+<template>
   <v-dialog width="500px" v-model="editDialog" class="d-none d-sm-flex">
     <template v-slot:activator="{ on, attrs }">
       <v-btn fab class="ml-4" accent v-bind="attrs" v-on="on">
