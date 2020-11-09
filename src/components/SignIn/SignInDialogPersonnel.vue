@@ -34,6 +34,7 @@
           <v-col>
             <v-card-actions class="d-flex flex-column">
               <v-btn
+              disabled
                 depressed
                 class="secondary mb-3"
                 router-link
@@ -42,6 +43,7 @@
                 >Login as Admin</v-btn
               >
               <v-btn
+
                 depressed
                 class="secondary mb-3"
                 router-link
@@ -50,6 +52,7 @@
                 >Login as Driver</v-btn
               >
               <v-btn
+              disabled
                 depressed
                 class="secondary mb-3"
                 router-link
