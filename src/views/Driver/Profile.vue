@@ -153,7 +153,6 @@ export default {
 @media screen and (min-width: 1024px) {
   .size {
     max-width: 40vw;
-    min-height: 80vh;
     margin: 0 auto;
     margin-bottom: 5%;
   }
