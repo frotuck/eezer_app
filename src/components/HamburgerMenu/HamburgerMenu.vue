@@ -65,7 +65,7 @@
           depressed
           tile
           class="d-flex justify-space-evenly primary size margin"
-          ><v-icon class="absolute-left">mdi-key</v-icon>Quarantine Pass</v-btn
+          ><v-icon class="absolute-left">mdi-key</v-icon>Quarantine</v-btn
         >
         <v-btn
           router-link
