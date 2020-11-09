@@ -130,7 +130,7 @@
           to="/quarantine-pass"
           class="icon-footer margin-icon-right"
         >
-          <v-img src="../../assets/key-inactive.png" min-width="35%" />
+          <v-img src="../../assets/key-active.png" min-width="35%" />
         </router-link>
       </v-container>
     </v-footer>
