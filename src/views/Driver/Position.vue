@@ -51,7 +51,7 @@
       </v-app-bar>
     </div>
       <v-card
-    class="mx-auto mt-sm-15 mt-8"
+    class="mx-auto mt-sm-5 mt-8"
     max-width="800"
   >
         <v-toolbar
