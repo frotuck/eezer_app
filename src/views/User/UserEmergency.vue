@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div desktop-background>
     <!-- ###################### -->
     <!-- #### DESKTOP VIEW #### -->
     <!-- ###################### -->
@@ -122,4 +122,53 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.boxshadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.158);
+}
+
+.margin-bot {
+  margin-bottom: 15%;
+}
+
+.margin-left {
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .box-shadow-none {
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .responsive {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .size {
+    max-width: 40vw;
+    min-height: 80vh;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
+  .responsive {
+    max-width: 90%;
+    max-height: 90%;
+    padding-bottom: 5%;
+  }
+
+  #desktop-background {
+    background-image: url(../../assets/desktop-background-1.png);
+    background-size: auto 126%;
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    padding-top: 2%;
+  }
+}
+</style>

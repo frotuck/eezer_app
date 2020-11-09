@@ -55,12 +55,12 @@ const routes = [
   {
     path: '/faq',
     name: 'FAQ',
-    component: () => import('../views/Driver/FAQ.vue')
+    component: () => import('../views/Driver/FAQ.vue'),
   },
   {
     path: '/first-aid',
     name: 'FirstAid',
-    component: () => import('../views/Driver/FirstAid.vue')
+    component: () => import('../views/Driver/FirstAid.vue'),
   },
 
   //USER_VIEWS!!
@@ -68,11 +68,6 @@ const routes = [
     path: '/user',
     name: 'User',
     component: () => import('../views/User/User.vue'),
-  },
-  {
-    path: '/userSignUp',
-    name: 'UserSignUp',
-    component: () => import('../views/User/UserSignUp.vue'),
   },
   {
     path: '/useremergency',
