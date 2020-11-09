@@ -13,7 +13,7 @@
           justify="center"
           class="header-page-name justify-self-center d-md-none"
         >
-          Profile
+          Driver ETA
         </h2>
         <v-container
           width="100%"
