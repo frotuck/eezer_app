@@ -107,7 +107,7 @@
             Driver Info
           </v-card-subtitle>
           <v-card-actions>
-            <app-dialog-patient></app-dialog-patient>
+            <app-dialog-driver></app-dialog-driver>
           </v-card-actions>
         </div>
       </div>
