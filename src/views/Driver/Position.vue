@@ -36,7 +36,7 @@
               <v-img
                 style="margin-bottom: -4px;"
                 alt="logout"
-                src="../../assets/map-desktop-inactive.png"
+                src="../../assets/map-desktop-active.png"
                 max-width="120px"
               />
             </router-link>
@@ -71,74 +71,63 @@
       >
         <h3>Route</h3>
       </v-toolbar>
-      <v-container class="pa-0"> 
-      <v-card
-    class="mx-auto mt-sm-5 mt-8"
-    max-width="1000"
-  >
-    <v-img
-      class="white--text align-end"
-      height="500px"
-      src="../../assets/map-desktop-large.png"
-    >
-    </v-img>
-    <div class="d-flex">
-      <div>
-    <v-card-subtitle class="pb-0" color="">
-      To Sesame Street
-    </v-card-subtitle>
-    <div class="d-flex">
-      <div>
-        <v-card-subtitle class="pb-0">
-      Time
-    </v-card-subtitle>
-    <v-card-text>25min</v-card-text>
-    </div>
-    <div>
-            <v-card-subtitle class="pb-0">
-      Distance
-    </v-card-subtitle>
-    <v-card-text>20km</v-card-text>
-    </div>
-    
-    </div>
-    </div>
-    <div class="d-flex flex-column">
-    <v-card-subtitle class="pb-0">
-      Patient Info
-    </v-card-subtitle>
-    <v-card-actions>
+      <v-container class="pa-0">
+        <v-card class="mx-auto mt-sm-5 mt-8" max-width="1000">
+          <v-img
+            class="white--text align-end"
+            height="500px"
+            src="../../assets/map-desktop-large.png"
+          >
+          </v-img>
+          <div class="d-flex">
+            <div>
+              <v-card-subtitle class="pb-0" color="">
+                To Sesame Street
+              </v-card-subtitle>
+              <div class="d-flex">
+                <div>
+                  <v-card-subtitle class="pb-0">
+                    Time
+                  </v-card-subtitle>
+                  <v-card-text>25min</v-card-text>
+                </div>
+                <div>
+                  <v-card-subtitle class="pb-0">
+                    Distance
+                  </v-card-subtitle>
+                  <v-card-text>20km</v-card-text>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <v-card-subtitle class="pb-0">
+                Patient Info
+              </v-card-subtitle>
+              <v-card-actions>
+                <app-dialog-patient></app-dialog-patient>
+              </v-card-actions>
+            </div>
 
-     <app-dialog-patient></app-dialog-patient>
-    </v-card-actions>
-    </div>
-    
-    <div>
-    <v-card-subtitle class="pb-0">
-      Call Patient
-    </v-card-subtitle>
-    <v-card-actions>
+            <div>
+              <v-card-subtitle class="pb-0">
+                Call Patient
+              </v-card-subtitle>
+              <v-card-actions>
+                <v-btn class="ml-4" fab>
+                  <v-icon large>mdi-phone</v-icon>
+                </v-btn>
+              </v-card-actions>
+            </div>
+          </div>
 
-      <v-btn class="ml-4" fab
-      >
-     <v-icon large>mdi-phone</v-icon>
-      </v-btn>
-    </v-card-actions>
-    </div>
-    </div>
-
-<div class="ml-10">
-    <v-card-actions class="ml-16">
-
-      <v-btn
-        class="secondary ml-16 px-5"
-        text
-      >
-        Drive Complete
-      </v-btn>
-    </v-card-actions>
-    </div>
-  </v-card>
+          <div class="ml-10">
+            <v-card-actions class="ml-16">
+              <v-btn class="secondary ml-16 px-5" text>
+                Drive Complete
+              </v-btn>
+            </v-card-actions>
+          </div>
+        </v-card>
       </v-container>
     </v-card>
     <!--   ##################### -->
@@ -152,7 +141,7 @@
           <v-img src="../../assets/alert-inactive.png" min-width="35%" />
         </router-link>
         <router-link to="/position" class="icon-footer margin-icon">
-          <v-img src="../../assets/explore-inactive.png" min-width="35%" />
+          <v-img src="../../assets/explore-active.png" min-width="35%" />
         </router-link>
         <router-link
           to="/quarantine-pass"
@@ -165,9 +154,7 @@
   </div>
 </template>
 <script>
-export default {
-  
-}
+export default {};
 </script>
 <style lang="scss" scoped>
 .margin-icon-left {

@@ -56,6 +56,7 @@
                   Not registered?
                 </p>
                 <v-btn
+                  disabled
                   depressed
                   class="secondary"
                   router-link
