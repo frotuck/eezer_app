@@ -15,6 +15,12 @@ export default {
 };
 </script>
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap%27');
+
+.alfa-slab-one {
+  font-family: 'Alfa Slab One', cursive !important;
+}
+
 .welcome-style {
   color: black;
   border-bottom: 3px solid #f87502;

@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           My Profile
         </h2>
@@ -68,7 +68,7 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h3>My profile</h3>
+        <h3 class="alfa-slab-one">My profile</h3>
       </v-toolbar>
       <v-container class="boxshadow pa-0">
         <v-img src="@/assets/profile-picture.png"></v-img>

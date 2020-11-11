@@ -24,7 +24,7 @@
           to="/emergency"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-bell</v-icon>Emergency</v-btn
         >
         <v-btn
@@ -32,7 +32,7 @@
           to="/profile"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-account</v-icon>Profile</v-btn
         >
         <v-btn
@@ -40,7 +40,7 @@
           to="/position"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-compass</v-icon>Map</v-btn
         >
         <v-btn
@@ -48,7 +48,7 @@
           to="/statistic"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-chart-bar</v-icon>Statistics</v-btn
         >
         <v-btn
@@ -56,7 +56,7 @@
           to="/tutorial"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-help</v-icon>Help</v-btn
         >
         <v-btn
@@ -64,7 +64,7 @@
           to="/quarantine-pass"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-key</v-icon>Quarantine</v-btn
         >
         <v-btn
@@ -72,7 +72,7 @@
           to="/"
           depressed
           tile
-          class="d-flex justify-space-evenly primary size margin"
+          class="d-flex justify-space-evenly primary size margin alfa-slab-one"
           ><v-icon class="absolute-left">mdi-exit-to-app</v-icon>Logout</v-btn
         >
       </v-card>
