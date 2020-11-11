@@ -4,7 +4,6 @@ COPY package*.json ./
 #RUN npm install
 RUN npm ci
 COPY ./ .
-RUN npm run test:unit
 RUN npm run build
 
 # production stage
