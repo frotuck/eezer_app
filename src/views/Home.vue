@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- ###################### -->
-    <!-- #### DESKTOP VIEW #### -->
-    <!-- ###################### -->
+    <!-- ####################### -->
+    <!-- #### DESKTOP VIEW ##### -->
+    <!-- ####################### -->
     <img src="" alt="" />
     <v-app-bar app color="white">
       <v-img
@@ -58,7 +58,7 @@
                     </v-list-item-subtitle>
                     <v-list-item-subtitle
                       >Greyhound divisely hello coldly fonwderfully <br />
-                      Greyhound divisely hello coldly fonwderfully
+                      Greyhound divisely hello coldly fonwderfuly
                     </v-list-item-subtitle>
                     <v-list-item-subtitle
                       >Greyhound divisely hello coldly fonwderfully <br />
