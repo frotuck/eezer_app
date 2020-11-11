@@ -53,16 +53,16 @@
                       Eezer Ambulance Service
                     </v-list-item-title>
                     <v-list-item-subtitle
-                      >Greyhound divisely hello coldly fonwderfully <br />
-                      Greyhound divisely hello coldly fonwderfully
+                      >Our goal is to develop safe and cost-effective
                     </v-list-item-subtitle>
                     <v-list-item-subtitle
-                      >Greyhound divisely hello coldly fonwderfully <br />
-                      Greyhound divisely hello coldly fonwderfuly
+                      >transport solutions for pregnant mothers and
                     </v-list-item-subtitle>
                     <v-list-item-subtitle
-                      >Greyhound divisely hello coldly fonwderfully <br />
-                      Greyhound divisely hello coldly fonwderfully
+                      >to have 3000 motorcycle ambulances
+                    </v-list-item-subtitle>
+                    <v-list-item-subtitle>
+                      in Africa by 2030.
                     </v-list-item-subtitle>
                   </div>
                 </v-list-item-content>
@@ -133,12 +133,20 @@
             >
               <v-list-item three-line>
                 <v-list-item-content>
-                  <div class="d-flex flex-column align-center">
-                    <v-list-item-title class="headline mb-1">
+                  <div>
+                    <h3>
                       Eezer Ambulance Service
-                    </v-list-item-title>
+                    </h3>
                     <v-list-item-subtitle
-                      >Greyhound divisely hello coldly fonwderfully
+                      >Our goal is to develop safe and
+                    </v-list-item-subtitle>
+
+                    <v-list-item-subtitle
+                      >cost-effective transport solutions for
+                    </v-list-item-subtitle>
+                    <v-list-item-subtitle
+                      >pregnant mothers and to have 3000 motorcycle ambulances
+                      in Africa by 2030.
                     </v-list-item-subtitle>
                   </div>
                 </v-list-item-content>
