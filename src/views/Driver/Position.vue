@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           Position
         </h2>
@@ -69,7 +69,7 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h3>Route</h3>
+        <h3 class="alfa-slab-one">Route</h3>
       </v-toolbar>
       <v-container class="pa-0">
         <v-card class="mx-auto mt-sm-5 mt-8" max-width="1000">
