@@ -14,6 +14,8 @@
 
 # Finns även under Projekt3
 
+https://eezer-app.herokuapp.com/
+
 ## Project setup
 
 ```
