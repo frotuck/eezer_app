@@ -19,7 +19,7 @@
       />
       <v-spacer></v-spacer>
 
-      <h1 justify="center" class="d-flex d-sm-none welcome-style">
+      <h1 justify="center" class="d-flex d-sm-none welcome-style alfa-slab-one">
         welcome
       </h1>
       <v-spacer></v-spacer>
@@ -43,7 +43,12 @@
             >
               <v-app-bar color="white">
                 <v-row justify="center">
-                  <h2 style="border-bottom:3px solid #F87502">Welcome</h2>
+                  <h2
+                    style="border-bottom:3px solid #F87502"
+                    class="alfa-slab-one"
+                  >
+                    Welcome
+                  </h2>
                 </v-row>
               </v-app-bar>
               <v-list-item three-line>
@@ -88,7 +93,10 @@
             >
               <v-app-bar color="white">
                 <v-row justify="center">
-                  <h2 style="border-bottom:3px solid #F87502">
+                  <h2
+                    style="border-bottom:3px solid #F87502"
+                    class="alfa-slab-one"
+                  >
                     Login to Eezer
                   </h2>
                 </v-row>

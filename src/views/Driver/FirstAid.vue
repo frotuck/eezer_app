@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           First Aid Guide
         </h2>
@@ -69,7 +69,7 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h3>First Aid Guide</h3>
+        <h3 class="alfa-slab-one">First Aid Guide</h3>
       </v-toolbar>
       <v-container class="d-flex flex-column">
         <v-row>

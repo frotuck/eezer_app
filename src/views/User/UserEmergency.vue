@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           Emergency
         </h2>
@@ -70,7 +70,7 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h3>Emergency</h3>
+        <h3 class="alfa-slab-one">Emergency</h3>
       </v-toolbar>
 
       <v-container class="  d-flex flex-column  	margin-bot responsive">

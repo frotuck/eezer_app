@@ -1,5 +1,5 @@
 <template>
- <div id="desktop-background">
+  <div id="desktop-background">
     <!--   ##################### -->
     <!--  ###### HEADER ###### -->
     <!-- ################### -->
@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           Statistic
         </h2>
@@ -69,70 +69,70 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h3>Statistic</h3>
+        <h3 class="alfa-slab-one">Statistic</h3>
       </v-toolbar>
-      <v-container> 
-      <v-row>
-        <v-col cols="12">
-          <v-card color="">
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-progress-circular
-                :rotate="360"
-                :size="120"
-                :width="15"
-                :value="70"
-                color="#F87502"
-              >
-                <h3>2.8mil</h3>
-              </v-progress-circular>
-              <v-card-title class="">
-                Travel Dist.
-              </v-card-title>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
-	<v-row>
-        <v-col cols="12">
-          <v-card color="#FCC99C">
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-card-title class="">
-                Avg Travel.
-              </v-card-title>
-              <v-progress-circular
-                :rotate="360"
-                :size="120"
-                :width="15"
-                :value="40"
-                color="#F87502"
-              >
-                <h3>3hrs</h3>
-              </v-progress-circular>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <v-card color="">
+              <div class="d-flex flex-no-wrap justify-space-between">
+                <v-progress-circular
+                  :rotate="360"
+                  :size="120"
+                  :width="15"
+                  :value="70"
+                  color="#F87502"
+                >
+                  <h3>2.8mil</h3>
+                </v-progress-circular>
+                <v-card-title class="">
+                  Travel Dist.
+                </v-card-title>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <v-card color="#FCC99C">
+              <div class="d-flex flex-no-wrap justify-space-between">
+                <v-card-title class="">
+                  Avg Travel.
+                </v-card-title>
+                <v-progress-circular
+                  :rotate="360"
+                  :size="120"
+                  :width="15"
+                  :value="40"
+                  color="#F87502"
+                >
+                  <h3>3hrs</h3>
+                </v-progress-circular>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
 
-      <v-row>
-        <v-col cols="12">
-          <v-card color="#F87502">
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-progress-circular
-                :rotate="360"
-                :size="120"
-                :width="15"
-                :value="70"
-                color="#FCC99C"
-              >
-                <h3>10 min</h3>
-              </v-progress-circular>
-              <v-card-title class="">
-                Response.
-              </v-card-title>
-            </div>
-          </v-card>
-        </v-col>
-      </v-row>
+        <v-row>
+          <v-col cols="12">
+            <v-card color="#F87502">
+              <div class="d-flex flex-no-wrap justify-space-between">
+                <v-progress-circular
+                  :rotate="360"
+                  :size="120"
+                  :width="15"
+                  :value="70"
+                  color="#FCC99C"
+                >
+                  <h3>10 min</h3>
+                </v-progress-circular>
+                <v-card-title class="">
+                  Response.
+                </v-card-title>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-container>
     </v-card>
     <!--   ##################### -->
@@ -156,7 +156,7 @@
         </router-link>
       </v-container>
     </v-footer>
-  </div> 
+  </div>
 </template>
 
 <script>

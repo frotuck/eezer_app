@@ -11,7 +11,7 @@
       >
         <h2
           justify="center"
-          class="header-page-name justify-self-center d-md-none"
+          class="header-page-name justify-self-center d-md-none alfa-slab-one"
         >
           F.A.Q
         </h2>
@@ -69,7 +69,7 @@
         class="primaryblack text-center d-none d-md-flex justify-center"
         dark
       >
-        <h4>Frequently Asked Questions</h4>
+        <h4 class="alfa-slab-one">Frequently Asked Questions</h4>
       </v-toolbar>
       <v-container
         class="d-flex flex-column align-center text-center"
